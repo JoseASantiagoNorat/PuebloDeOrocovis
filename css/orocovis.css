@@ -1,0 +1,546 @@
+:root {
+  --azul: #06144a;
+  --azul-claro: #207fb7;
+  --verde: #166c3a;
+  --verde-claro: #6fae42;
+  --oro: #f2c84b;
+  --crema: #f7f4ea;
+  --gris: #eef2f4;
+  --texto: #243039;
+  --blanco: #ffffff;
+  --sombra: 0 12px 30px rgba(6, 20, 74, 0.12);
+  --radio: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #0c7aa1 0, #0c7aa1 14px, var(--crema) 14px, var(--crema) calc(100% - 14px), #b89b58 calc(100% - 14px));
+  color: var(--texto);
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: min(94%, 1180px);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.centrar-text {
+  text-align: center;
+}
+
+.site-wrapper {
+  background: var(--blanco);
+  box-shadow: var(--sombra);
+  margin: 16px auto;
+  max-width: 1220px;
+  min-height: calc(100vh - 32px);
+}
+
+.site-header {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+.header-bar {
+  align-items: center;
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  min-height: 82px;
+  padding: 0 28px;
+}
+
+.header-title {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.header-symbols {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.header-symbols img {
+  background: var(--blanco);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radio);
+  height: 54px;
+  object-fit: contain;
+  padding: 4px;
+  width: 86px;
+}
+
+.header-symbols img:last-child {
+  width: 48px;
+}
+
+.hero-img {
+  aspect-ratio: 4.9 / 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.layout {
+  align-items: start;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 190px minmax(0, 1fr) 280px;
+  padding: 28px 0 40px;
+}
+
+.side-nav {
+  display: grid;
+  gap: 14px;
+  position: sticky;
+  top: 16px;
+}
+
+.side-nav a {
+  align-items: center;
+  background: var(--azul);
+  border-radius: var(--radio);
+  color: var(--blanco);
+  display: flex;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px;
+  text-align: center;
+}
+
+.side-nav a:hover,
+.side-nav a:focus,
+.side-nav a.activo {
+  background: var(--verde);
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.contenido-principal h2,
+.contenido-principal h3 {
+  color: var(--azul-claro);
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.2;
+}
+
+.contenido-principal h2 {
+  font-size: 1.8rem;
+  margin: 0 0 16px;
+}
+
+.contenido-principal h3 {
+  font-size: 1.35rem;
+  margin: 28px 0 12px;
+}
+
+.contenido-principal h4 {
+  color: var(--azul);
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+
+.contenido-principal p {
+  line-height: 1.65;
+  margin: 0 0 16px;
+}
+
+.intro {
+  font-size: 1.03rem;
+}
+
+.orocovis {
+  color: var(--verde);
+  font-weight: 800;
+}
+
+.media-frame,
+.info-card,
+.sidebar-box,
+.atractivo,
+.restaurante,
+.persona,
+.formulario,
+.gallery-item {
+  border: 1px solid #dce5e9;
+  border-radius: var(--radio);
+  box-shadow: 0 8px 20px rgba(36, 48, 57, 0.07);
+}
+
+.media-frame {
+  background: var(--gris);
+  margin: 18px 0;
+  overflow: hidden;
+}
+
+.media-frame img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+}
+
+.caption {
+  color: #53636d;
+  font-size: 0.9rem;
+  padding: 10px 14px;
+}
+
+.symbols-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 24px 0;
+}
+
+.info-card {
+  background: var(--blanco);
+  padding: 16px;
+}
+
+.info-card img {
+  aspect-ratio: 16 / 10;
+  margin-bottom: 12px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.info-card h4 {
+  margin-bottom: 8px;
+}
+
+.quick-list,
+.sidebar-list,
+.rutas,
+.fuentes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quick-list li,
+.sidebar-list li,
+.rutas li,
+.fuentes-list li {
+  border-bottom: 1px solid #e2e8eb;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.quick-list li:last-child,
+.sidebar-list li:last-child,
+.rutas li:last-child,
+.fuentes-list li:last-child {
+  border-bottom: 0;
+}
+
+.highlight-grid,
+.personas-grid,
+.gallery-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.persona,
+.gallery-item {
+  background: var(--blanco);
+  overflow: hidden;
+}
+
+.persona img,
+.gallery-item img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.persona div,
+.gallery-item div {
+  padding: 14px;
+}
+
+.sidebar {
+  display: grid;
+  gap: 18px;
+}
+
+.sidebar-box {
+  background: #fbfcfd;
+  padding: 18px;
+}
+
+.sidebar-box h3 {
+  color: var(--azul);
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.15rem;
+  margin: 0 0 12px;
+}
+
+.boton {
+  border: 0;
+  border-radius: var(--radio);
+  color: var(--blanco);
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 800;
+  justify-content: center;
+  margin-top: 10px;
+  min-height: 42px;
+  padding: 12px 18px;
+}
+
+.boton--primario {
+  background: var(--verde);
+}
+
+.boton--secundario {
+  background: var(--azul);
+}
+
+.boton:hover,
+.boton:focus {
+  color: var(--blanco);
+  filter: brightness(1.08);
+  text-decoration: none;
+}
+
+.atractivo,
+.restaurante {
+  background: var(--blanco);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 240px minmax(0, 1fr);
+  margin: 18px 0;
+  overflow: hidden;
+}
+
+.atractivo__imagen img,
+.restaurante__imagen img {
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.atractivo__contenido,
+.restaurante__informacion {
+  padding: 18px 18px 18px 0;
+}
+
+.contenido-principal__text {
+  background: #f3f8f1;
+  border-left: 5px solid var(--verde);
+  margin: 0 0 20px;
+  padding: 16px 18px;
+}
+
+.gastronomia__imagen {
+  margin: 20px 0;
+}
+
+.gastronomia__imagen img {
+  aspect-ratio: 16 / 8;
+  border-radius: var(--radio);
+  object-fit: cover;
+  width: 100%;
+}
+
+.contacto-bg {
+  background-image: url("../img/letrero-orocovis.webp");
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--radio);
+  height: 260px;
+  margin: 18px 0 0;
+}
+
+.formulario {
+  background: var(--blanco);
+  margin: -54px auto 0;
+  max-width: 720px;
+  padding: 26px;
+  position: relative;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo__field {
+  border: 1px solid #cad7dd;
+  border-radius: var(--radio);
+  color: var(--texto);
+  min-height: 48px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.campo__field--textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.video-wrap {
+  aspect-ratio: 16 / 9;
+  background: var(--azul);
+  border-radius: var(--radio);
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-wrap iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.audio-panel {
+  background: #f4f8fb;
+  border-left: 5px solid var(--azul-claro);
+  border-radius: var(--radio);
+  margin: 20px 0;
+  padding: 18px;
+}
+
+.audio-panel audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.site-footer {
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 30px 0;
+}
+
+.footer-grid {
+  align-items: center;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.footer-grid p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+.social-menu {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-menu a {
+  align-items: center;
+  background: var(--blanco);
+  border-radius: 50%;
+  color: var(--azul);
+  display: flex;
+  font-size: 1.25rem;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.social-menu a:hover,
+.social-menu a:focus {
+  background: var(--oro);
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: static;
+  }
+
+  .sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .site-wrapper {
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  .header-bar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 22px;
+  }
+
+  .header-title {
+    font-size: 1.7rem;
+  }
+
+  .hero-img {
+    aspect-ratio: 16 / 7;
+  }
+
+  .side-nav,
+  .symbols-grid,
+  .highlight-grid,
+  .personas-grid,
+  .gallery-grid,
+  .sidebar,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .atractivo,
+  .restaurante {
+    grid-template-columns: 1fr;
+  }
+
+  .atractivo__contenido,
+  .restaurante__informacion {
+    padding: 0 18px 18px;
+  }
+
+  .footer-grid {
+    text-align: center;
+  }
+
+  .social-menu {
+    justify-content: center;
+  }
+}

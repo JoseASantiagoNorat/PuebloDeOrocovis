@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-labelledby="titulo desc">
+  <title id="titulo">Mapa ilustrado de Orocovis en Puerto Rico</title>
+  <desc id="desc">Mapa sencillo de Puerto Rico con Orocovis marcado en el centro de la isla.</desc>
+  <rect width="960" height="520" fill="#eef6f8"/>
+  <path d="M112 250 C158 205 223 185 304 189 C390 193 450 160 536 171 C620 181 679 215 756 221 C806 225 843 242 863 275 C831 312 779 331 711 337 C631 344 576 377 492 370 C399 363 338 333 250 333 C190 333 143 310 112 250Z" fill="#8ec255" stroke="#3e7d3b" stroke-width="8"/>
+  <path d="M244 292 C308 278 366 282 432 291 C496 300 560 292 619 270 C665 254 724 262 770 284" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <path d="M166 245 C229 230 292 231 356 242 C421 253 485 252 552 232 C615 214 679 216 746 236" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+  <circle cx="506" cy="257" r="44" fill="#f2c84b" stroke="#06144a" stroke-width="8"/>
+  <circle cx="506" cy="257" r="18" fill="#207fb7"/>
+  <path d="M506 188 L522 235 L572 235 L532 265 L548 313 L506 283 L464 313 L480 265 L440 235 L490 235Z" fill="#ffffff" opacity=".94"/>
+  <text x="506" y="401" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="38" font-weight="800" fill="#06144a">Orocovis</text>
+  <text x="506" y="438" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="22" fill="#166c3a">Centro geográfico y corazón de Puerto Rico</text>
+</svg>
